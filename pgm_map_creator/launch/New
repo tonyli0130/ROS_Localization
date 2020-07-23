@@ -1,0 +1,7 @@
+gzserver src/pgm_map_creator/world/ZilinWorld.world
+
+roslaunch pgm_map_creator request_publisher.launch
+
+roslaunch my_robot world.launch
+
+roslaunch my_robot amcl.launch
