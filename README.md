@@ -1,5 +1,6 @@
 # ROS_Localization
-Description
+
+The Localization project uses AMCL (Adaptive Monte Carlo Localization) package interacting with robot in gazebo world to localize the robot position under ROSS (Robot Operation System) framework. AMCL algorithm localizes the robot with the help of particle filter. The particle will update its measurement and current state as the robot keeps moving. An important weight which tells how closed this partilce is to the robot will be assigend to each particle. The resampling process will generate more particles with higher important weight and convergence of particles will appear after sufficient numbers of iterations.
 
 ## Installation
 1. Open a new terminal and build the catkin workspace:
@@ -43,8 +44,15 @@ Description
  
    After launching the `world.launch` and `amcl.launch`, the localization is ready. Use the 2D navigation tool button shown below to point out the goal location and the robot will start to move toward the goal location autonumously:
    
+   
+    ![3](https://user-images.githubusercontent.com/60047845/89331006-b034c000-d656-11ea-8750-96ad712d3771.PNG)
+    
+   
    The swarm of red arrows will converge gradually as the robot keeps moving. Try to move the robot to different goal locations until the convergence of red arrows is satisfactory. An example of convergence is shown below:
-   ![1](https://user-images.githubusercontent.com/60047845/89330153-76af8500-d655-11ea-95eb-aa12b0b293c4.png)
+   
+   
+   
 
- 
-## Source Code Explaination
+
+
+
