@@ -50,7 +50,7 @@ The Localization project uses AMCL (Adaptive Monte Carlo Localization) package i
    
    The swarm of red arrows will converge gradually as the robot keeps moving. Try to move the robot to different goal locations until the convergence of red arrows is satisfactory. An example of convergence is shown below:
    
-   
+   ![1](https://user-images.githubusercontent.com/60047845/89330153-76af8500-d655-11ea-95eb-aa12b0b293c4.png)
    
 
 
