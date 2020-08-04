@@ -33,21 +33,18 @@ Description
 
     * `roslaunch my_robot world.launch`
     
-2. Next launch the `mapping.launch` file which opens the scripts containing the main code to localize the robot in gazeo world:
-    * `roslaunch my_robot my_robot.launch`
+2. Next launch the `amcl.launch` file which opens the scripts containing the main code to localize the robot in gazeo world:
+    * `roslaunch my_robot amcl.launch`
  
    The RViz which provides a better visualization of both robot and simulation environment will open simultaneously, the fixed frame should be set to /map and the swarm of red arrows which represent the particle filters will appear after few minutes:
       
+   ![2](https://user-images.githubusercontent.com/60047845/89330177-80d18380-d655-11ea-9a68-4763ca16275f.png)
+  
+ 
+   After launching the `world.launch` and `amcl.launch`, the localization is ready. Use the 2D navigation tool button shown below to point out the goal location and the robot will start to move toward the goal location autonumously:
    
+   The swarm of red arrows will converge gradually as the robot keeps moving. Try to move the robot to different goal locations until the convergence of red arrows is satisfactory. An example of convergence is shown below:
+   ![1](https://user-images.githubusercontent.com/60047845/89330153-76af8500-d655-11ea-95eb-aa12b0b293c4.png)
 
-
-2. Next launch the `ball_chaser.launch` file which opens the scripts containing the main code to interact with robot in gazeo world:
-    * `roslaunch ball_chaser ball_chaser.launch`
  
-   After launching the `world.launch` and `ball_chaser.launch`, the ball chasing process is ready. Use the drag button shown below to move the white ball to different locations as long as the robot camera can capture. The robot should start to move and chase toward the ball.
- 
- 
-    ![drag_button](https://user-images.githubusercontent.com/60047845/89233799-ff73e580-d5af-11ea-87ea-d89b2f941129.PNG)
-
-
 ## Source Code Explaination
