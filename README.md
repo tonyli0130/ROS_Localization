@@ -32,9 +32,12 @@ Description
 1. Now run the Localization project, first launch the `world.launch` file and have the robot simulation environment ready:
 
     * `roslaunch my_robot world.launch`
+    
+2. Next launch the `mapping.launch` file which opens the scripts containing the main code to localize the robot in gazeo world:
+    * `roslaunch my_robot my_robot.launch`
  
- 
-   The RViz which provides a better visualization of both robot and simulation environment will open simultaneously, the fixed frame should be set to /map and the swarm of red arrows which represent the partilce filters will appear after few minutes:
+   The RViz which provides a better visualization of both robot and simulation environment will open simultaneously, the fixed frame should be set to /map and the swarm of red arrows which represent the particle filters will appear after few minutes:
+      
    
 
 
